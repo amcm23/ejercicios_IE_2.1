@@ -6,10 +6,10 @@ public class DVDCine {
 	private String director;
 	private String actores;
 	private String categoria;
-	private String duracion;
+	private int duracion;
 	private String resumen;
 
-	DVDCine(String titulo, String director, String actores, String categoria, String duracion, String resumen) {
+	DVDCine(String titulo, String director, String actores, String categoria, int duracion, String resumen) {
 		this.titulo = titulo;
 		this.director = director;
 		this.actores = actores;
@@ -54,7 +54,7 @@ public class DVDCine {
 		return duracion+"min";
 	}
 
-	public void setDuracion(String duracion) { // selecciona la duración
+	public void setDuracion(int duracion) { // selecciona la duración
 		this.duracion = duracion;
 	}
 
@@ -67,8 +67,8 @@ public class DVDCine {
 	}
 
 	public String muestraDVDCine() {
-		return titulo + " De: " + director + "\nCon: " + actores + "\n" + categoria + "-" + duracion + " min" + "\n"
-				+"\nResumen: " + resumen;
+		return titulo + " De: " + director + "\nCon: " + actores + "\n" + categoria + "-" + duracion + " min"
+				+"\nResumen: " + ((resumen!=null) ? resumen:"No tiene resumen");
 	}
 
 	public boolean esThriller() {
@@ -77,6 +77,7 @@ public class DVDCine {
 		} else {
 			return false;
 		}
+		
 	}
 		
 		public boolean tieneResumen() {
