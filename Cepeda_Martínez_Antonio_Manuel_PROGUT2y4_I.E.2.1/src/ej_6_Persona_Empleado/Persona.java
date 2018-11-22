@@ -1,7 +1,15 @@
 package ej_6_Persona_Empleado;
 
-public class Persona {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
+import metodosGenerales.Try;
+
+public class Persona {
+	
+	Try m1=new Try();
+	public BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 	protected String nombre;
 	protected int edad;
 
@@ -21,10 +29,16 @@ public class Persona {
 		this.edad = edad;
 	}
 
-	public void setDatos () {
+	public void setDatos () throws IOException {
 		
 		System.out.println("Introduzca el nombre: ");
-		setNombre(nombre); //leer.readline
+		setNombre(leer.readLine());
+		System.out.println("Introduzca la edad: ");
+		setEdad(m1.tryInt());
+	}
+	
+	public String getDatos() {
+		return "Nombre: "+getNombre()+"\nEdad: "+getEdad();
 	}
 
 }
