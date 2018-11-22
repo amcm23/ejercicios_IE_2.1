@@ -4,39 +4,23 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import metodosGenerales.Try;
+
 public class MainCuenta {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
-		boolean salir=false;
+		boolean salir = false;
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Bienvenido a nuestro sistema, a continuación, generaremos una cuenta para usted: ");
 		Cuenta c1 = new Cuenta();
+		Try m1 = new Try();
 		c1.ncuenta += 1;
 		System.out.println("Introduzca su DNI (sin letra): ");
-		boolean error;
-		do { // evita introducir no long o carácteres
-			try {
-				error = true;
-				c1.setDni(Long.parseLong(leer.readLine()));
-			} catch (NumberFormatException e) {
-				error = false;
-				System.out.println("Error " + e.getMessage());
-				System.out.println("Introduzca su DNI sin letra, por favor");
-			}
-		} while (!error);
+		c1.setDni(m1.tryLong());
 		System.out.println("");
 		System.out.println("Introduzca el interés anual (en %): ");
-		do { // evita introducir no float o carácteres
-			try {
-				error = true;
-				Cuenta.setInteres(Float.parseFloat(leer.readLine()));
-			} catch (NumberFormatException e) {
-				error = false;
-				System.out.println("Error " + e.getMessage());
-				System.out.println("Introduzca su DNI sin letra, por favor");
-			}
-		} while (!error);
+		Cuenta.setInteres(m1.tryFloat());
 		do {
 			System.out.println("El estado de su cuenta actualmente es: ");
 			System.out.println("");
@@ -55,32 +39,14 @@ public class MainCuenta {
 				break;
 			case 2:
 				System.out.println("Inserte la cantidad a ingresar: ");
-				do { // evita introducir no double o carácteres
-					try {
-						error = true;
-						c1.ingresar(Double.parseDouble(leer.readLine()));
-					} catch (NumberFormatException e) {
-						error = false;
-						System.out.println("Error " + e.getMessage());
-						System.out.println("Introduzca un número");
-					}
-				} while (!error);
+				c1.ingresar(m1.tryDouble());
 				break;
 			case 3:
 				System.out.println("Inserte la cantidad a retirar: ");
-				do { // evita introducir no double o carácteres
-					try {
-						error = true;
-						c1.retirar(Double.parseDouble(leer.readLine()));
-					} catch (NumberFormatException e) {
-						error = false;
-						System.out.println("Error " + e.getMessage());
-						System.out.println("Introduzca un número");
-					}
-				} while (!error);
+				c1.retirar(m1.tryDouble());
 				break;
 			case 4:
-				salir=true;
+				salir = true;
 				break;
 			default:
 				break;

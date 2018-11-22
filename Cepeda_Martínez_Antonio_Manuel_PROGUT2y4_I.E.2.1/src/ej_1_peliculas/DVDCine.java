@@ -51,7 +51,7 @@ public class DVDCine {
 	}
 
 	public String muestraDuracion() { // muestra la duración
-		return duracion+"min";
+		return duracion + "min";
 	}
 
 	public void setDuracion(int duracion) { // selecciona la duración
@@ -68,7 +68,7 @@ public class DVDCine {
 
 	public String muestraDVDCine() {
 		return titulo + " De: " + director + "\nCon: " + actores + "\n" + categoria + "-" + duracion + " min"
-				+"\nResumen: " + ((resumen!=null) ? resumen:"No tiene resumen");
+				+ "\nResumen: " + ((resumen != null) ? resumen : "No tiene resumen");
 	}
 
 	public boolean esThriller() {
@@ -77,14 +77,14 @@ public class DVDCine {
 		} else {
 			return false;
 		}
-		
+
 	}
-		
-		public boolean tieneResumen() {
-			if (resumen!=null) {
-				return true;
-			} else {
-				return false;
-			}
+
+	public boolean tieneResumen() {
+		if (resumen != null) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }

@@ -66,36 +66,42 @@ public class Empleado {
 		this.nhijos = nhijos;
 	}
 
-	Empleado() {
-	} // constructor vacío
-	
-	public int muestraExtra () {
-		return hExtra*pagohExtra;
+	Empleado() { // constructor vacío
 	}
-	
-	public int sueldoBruto () {
-		return sueldoBase+muestraExtra();
+
+	public int muestraExtra() {
+		return hExtra * pagohExtra;
 	}
-	
-	public double irpf () {
-		return (casado) ? (irpf-2-nhijos):(irpf-nhijos);
+
+	public int sueldoBruto() {
+		return sueldoBase + muestraExtra();
 	}
-	
+
+	public double irpf() {
+		return (casado) ? (irpf - 2 - nhijos) : (irpf - nhijos);
+	}
+
 	public void println() {
-		System.out.println("Empleado NIF: "+nif);
-		System.out.println("Casado: "+((casado) ? "si":"no"));
-		System.out.println("Nº Hijos: "+nhijos);
+		System.out.println("Empleado NIF: " + nif);
+		System.out.println("Casado: " + ((casado) ? "si" : "no"));
+		System.out.println("Nº Hijos: " + nhijos);
 	}
-	
+
 	public void printAll() {
 		println();
-		System.out.println("Sueldo Base: "+sueldoBase+"€.");
-		System.out.println("Sueldo Bruto: "+sueldoBruto()+"€.");
-		System.out.println("Retención IRPF: "+irpf()+"%.");
-		System.out.println("Sueldo Neto: "+(sueldoBruto()-irpf())+"€.");
+		System.out.println("Sueldo Base: " + sueldoBase + "€.");
+		System.out.println("Sueldo Bruto: " + sueldoBruto() + "€.");
+		System.out.println("Retención IRPF: " + irpf() + "%.");
+		System.out.println("Sueldo Neto: " + (sueldoBruto() * (irpf()) / 100) + "€.");
 	}
-	
-	public final void copia(){ //falta el método clonar
-		
+
+	public void copia(Empleado e) {
+		this.nif = e.nif;
+		this.sueldoBase = e.sueldoBase;
+		this.pagohExtra = e.pagohExtra;
+		this.hExtra = e.hExtra;
+		this.irpf = e.irpf;
+		this.casado = e.casado;
+		this.nhijos = e.nhijos;
 	}
-}	
+}

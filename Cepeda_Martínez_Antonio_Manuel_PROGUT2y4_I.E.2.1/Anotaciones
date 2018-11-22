@@ -1,0 +1,17 @@
+BufferedReader leer=new BufferedReader (new InputStreamReader(System.in));
+(x)=Integer.parseInt(leer.readLine());
+Scanner leer=new Scanner(System.in);
+(x)=entrada.nextInt();
+
+do { // evita introducir no entero o carácteres
+				try {
+					error = true;
+					aux = Integer.parseInt(leer.readLine());
+				} catch (NumberFormatException e) {
+					error = false;
+					System.out.println("Error " + e.getMessage());
+					System.out.println("Introduzca un número entero");
+				}
+			} while (!error);
+
+para un salto de linea dentro de un string se usa \n;

@@ -4,56 +4,61 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Metodos {
-	static BufferedReader leer=new BufferedReader (new InputStreamReader(System.in));
-	private int comprobar;
-	
-	
-	
-	public void tryInt (int comprobar) throws IOException {
+public class Try {
+
+	public BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
+
+	public int tryInt() throws IOException { // método try catch para enteros
 		boolean error;
+		int comprobar = 0;
 		do { // evita introducir no entero o carácteres
 			try {
 				error = true;
-				this.comprobar=comprobar;
+				comprobar = Integer.parseInt(leer.readLine());
 			} catch (NumberFormatException e) {
 				error = false;
 				System.out.println("Error " + e.getMessage());
 				System.out.println("Introduzca un número entero");
 			}
 		} while (!error);
+		return comprobar;
 	}
-	
-	public void tryFloat (float comprobar) throws IOException {
+
+	public float tryFloat() throws IOException { // método try catch para float
 		boolean error;
+		float comprobar = 0;
 		do { // evita introducir no float o carácteres
 			try {
 				error = true;
-				comprobar=comprobar;
+				comprobar = Float.parseFloat(leer.readLine());
 			} catch (NumberFormatException e) {
 				error = false;
 				System.out.println("Error " + e.getMessage());
 				System.out.println("Introduzca un número");
 			}
 		} while (!error);
+		return comprobar;
 	}
-	
-	public static void tryLong (long comprobar) throws IOException {
+
+	public long tryLong() throws IOException { // método try catch para long
 		boolean error;
-		do { // evita introducir no long o carácteres
+		long comprobar = 0;
+		do { // evita introducir no entero o carácteres
 			try {
 				error = true;
 				comprobar = Long.parseLong(leer.readLine());
 			} catch (NumberFormatException e) {
 				error = false;
 				System.out.println("Error " + e.getMessage());
-				System.out.println("Introduzca un número long");
+				System.out.println("Introduzca un número tipo long");
 			}
 		} while (!error);
+		return comprobar;
 	}
-	
-	public void tryDouble (double comprobar) throws IOException {
+
+	public double tryDouble() throws IOException { // método try catch para double
 		boolean error;
+		double comprobar = 0;
 		do { // evita introducir no double o carácteres
 			try {
 				error = true;
@@ -64,5 +69,7 @@ public class Metodos {
 				System.out.println("Introduzca un número");
 			}
 		} while (!error);
+		return comprobar;
 	}
+
 }

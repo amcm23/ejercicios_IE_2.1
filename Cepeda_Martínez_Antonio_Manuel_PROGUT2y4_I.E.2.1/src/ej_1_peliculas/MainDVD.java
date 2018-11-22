@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import metodosGenerales.Try;
+
 public class MainDVD {
 
 	public static void main(String[] args) throws IOException {
@@ -21,17 +23,8 @@ public class MainDVD {
 			System.out.println("Inserte la categoría de la película (ej: thriller,comedia,etc.)");
 			dvd1.setCategoria(leer.readLine());
 			System.out.println("Inserte la duración de la película (en minutos)");
-			boolean error;
-			do { // evita introducir no entero o carácteres
-				try {
-					error = true;
-					dvd1.setDuracion(Integer.parseInt(leer.readLine()));
-				} catch (NumberFormatException e) {
-					error = false;
-					System.out.println("Error " + e.getMessage());
-					System.out.println("Introduzca un número entero");
-				}
-			} while (!error);
+			Try m1 = new Try();
+			dvd1.setDuracion(m1.tryInt());
 			System.out.println("¿Desea introducir un resumen de la película? (si/no)");
 			if (leer.readLine().equalsIgnoreCase("si")) {
 				System.out.println("Introduzca el resumen: ");
