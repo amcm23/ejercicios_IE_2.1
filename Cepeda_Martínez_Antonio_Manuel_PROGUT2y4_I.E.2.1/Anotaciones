@@ -15,3 +15,7 @@ do { // evita introducir no entero o carácteres
 			} while (!error);
 
 para un salto de linea dentro de un string se usa \n;
+
+ArrayList<tipoObjeto(una clase,entero,string...)>nombreLista=new ArrayList();
+//añadir
+nombrelista.add(nombreobjetoa_añadir)
