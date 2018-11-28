@@ -17,7 +17,7 @@ public class Marte {
 		System.out.println("El marciano " + et1.getNombre() + ((et1.estaVivo()) ? " está vivo." : " está muerto."));
 		System.out.println("El marciano " + et2.getNombre() + ((et2.estaVivo()) ? " está vivo." : " está muerto."));
 		System.out.println("El marciano " + et3.getNombre() + ((et3.estaVivo()) ? " está vivo." : " está muerto."));
-		System.out.println("El marciano " + et4.getNombre() + ((et4.estaVivo()) ? " está vivo." : " está muerto."));
+		System.out.println("El marciano " + et4.getNombre() + ((et4.estaVivo()) ? " está vivo." : " está muerto. "));
 
 	}
 

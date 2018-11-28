@@ -28,7 +28,7 @@ public class Marciano {
 			vivo = false;
 			System.out.println("El marciano " + nombre + " ha muerto.");
 		} else {
-			System.out.println("El marciano ya está muerto.");
+			System.out.println("El marciano ya está muerto. ");
 		}
 	}
 
