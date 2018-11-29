@@ -36,8 +36,7 @@ public class Empleado {
 
 	public double sueldoBruto() {
 		if (nhoras > 40) {
-			return ((40 * tarifa) + ((nhoras - 40)
-					* (tarifa + (tarifa / 2)))); /* este me calcula el sueldo con la tarifa de las 40h mas la tarifa
+			return ((40 * tarifa) + ((nhoras - 40)* (tarifa + (tarifa / 2)))); /* este me calcula el sueldo con la tarifa de las 40h mas la tarifa
 													 * y media de las horas extras a 40 */
 		} else {
 			return nhoras * tarifa; // calcula la tarifa normal
