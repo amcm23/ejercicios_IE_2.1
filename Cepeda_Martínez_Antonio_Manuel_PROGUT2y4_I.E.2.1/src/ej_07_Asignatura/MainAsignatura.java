@@ -15,7 +15,7 @@ public class MainAsignatura {
 		System.out.println("Introduzca el nombre de la asignatura: ");
 		Asignatura a1=new Asignatura(leer.readLine(), null);
 		System.out.println("Introduzca la nota (de 0 a 10): ");
-		a1.setNota(t1.tryMaxDouble(0,10));
+		a1.setNota(t1.tryMinMaxDouble(0,10));
 		System.out.println("");
 		System.out.println("La asignatura es: "+a1.getNombre());
 		System.out.println("Tiene una nota de: "+a1.getNota());

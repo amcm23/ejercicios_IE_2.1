@@ -31,7 +31,7 @@ public class Personajes {
 
 	public void alimentarse(int ener) {
 		if((energia+ener)>maxenergia) {
-			System.out.println("La energía está al máximo, se han podido añadir "+((ener-(energia+ener)-maxenergia))+" de los "+ener+" que intentabas añadir.");
+			System.out.println("La energía está al máximo, se han podido añadir "+(maxenergia-energia)+" de energía.");
 			energia=maxenergia;
 		} else {
 			energia += ener;

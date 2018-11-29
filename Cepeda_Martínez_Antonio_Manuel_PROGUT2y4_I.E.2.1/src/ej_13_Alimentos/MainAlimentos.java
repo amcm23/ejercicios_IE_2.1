@@ -16,11 +16,11 @@ public class MainAlimentos {
 		System.out.println("Nombre (código alfanumérico): ");
 		Alimento a = new Alimento(leer.readLine());
 		System.out.println("Contenido en lípidos (%): ");
-		a.setLipidos(t.tryMaxDouble(0, 100));
+		a.setLipidos(t.tryMinMaxDouble(0, 100));
 		System.out.println("Contenido en hidratos de carbono (%): ");
-		a.setHidratos(t.tryMaxDouble(0, 100));
+		a.setHidratos(t.tryMinMaxDouble(0, 100));
 		System.out.println("Contenido en proteínas (%): ");
-		a.setProteinas(t.tryMaxDouble(0, 100));
+		a.setProteinas(t.tryMinMaxDouble(0, 100));
 		System.out.println("¿Es el alimento de origen animal?: (si/no)");
 		if (leer.readLine().equalsIgnoreCase("si")) {
 			a.setOrigen_animal(true);
@@ -31,7 +31,7 @@ public class MainAlimentos {
 		System.out.println("1.Alto (A)");
 		System.out.println("2.Medio (M)");
 		System.out.println("3.Bajo (B)");
-		switch (t.tryMaxInt(1, 3)) {
+		switch (t.tryMinMaxInt(1, 3)) {
 		case 1:
 			a.setVitaminas('A');
 			break;
@@ -47,7 +47,7 @@ public class MainAlimentos {
 		System.out.println("1.Alto (A)");
 		System.out.println("2.Medio (M)");
 		System.out.println("3.Bajo (B)");
-		switch (t.tryMaxInt(1, 3)) {
+		switch (t.tryMinMaxInt(1, 3)) {
 		case 1:
 			a.setMinerales('A');
 			break;

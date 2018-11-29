@@ -19,10 +19,10 @@ public class Test {
 		do {
 			System.out.println("El guerrero "+g.getNombre()+" espera ansioso tu orden.");
 			System.out.println("Seleccione acción (1/2/3):                        Energía actual: " + g.getEnergia());
-			System.out.println("1.Alimentarse.");
-			System.out.println("2.Combatir");
+			System.out.println("1.Alimentarse. (+5e)");
+			System.out.println("2.Combatir (-3e)");
 			System.out.println("3.Dejar de usar este personaje.");
-			switch (t.tryMaxInt(1, 3)) {
+			switch (t.tryMinMaxInt(1, 3)) {
 			case 1:
 				g.alimentarse(5);
 				break;
@@ -38,22 +38,23 @@ public class Test {
 		
 		System.out.println("Introduzca el nombre del mago y el nombre de su poder: ");
 		Mago m=new Mago(leer.readLine(), leer.readLine());
+		salir=false;
 		do {
 			System.out.println("El mago "+m.getNombre()+" espera pacientemente tu orden.");
-			System.out.println("Seleccione acción (1/2/3):                        Energía actual: " + g.getEnergia());
-			System.out.println("1.Alimentarse.");
-			System.out.println("2.Encantar");
+			System.out.println("Seleccione acción (1/2/3):                        Energía actual: " + m.getEnergia());
+			System.out.println("1.Alimentarse. (+5e)");
+			System.out.println("2.Encantar (-2e)");
 			System.out.println("3.Dejar de usar este personaje y finalizar el combate.");
-			switch (t.tryMaxInt(1, 3)) {
+			switch (t.tryMinMaxInt(1, 3)) {
 			case 1:
-				g.alimentarse(5);
+				m.alimentarse(5);
 				break;
 			case 2:
 				System.out.println(m.encantar());
 				break;
 			case 3:
 				salir=true;
-				System.out.println("El mago "+g.getNombre()+" abandona el combate.");
+				System.out.println("El mago "+m.getNombre()+" abandona el combate.");
 				break;
 			}
 			

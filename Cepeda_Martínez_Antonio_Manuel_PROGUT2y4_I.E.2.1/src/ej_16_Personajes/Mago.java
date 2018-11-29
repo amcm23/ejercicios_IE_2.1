@@ -10,7 +10,7 @@ public class Mago extends Personajes {
 	}
 	
 	public String encantar() {
-		if(2-energia<0) {
+		if(energia-2<0) {
 			return("Insuficiente poder para realizar el hechizo.");
 		} else {
 			energia-=2;

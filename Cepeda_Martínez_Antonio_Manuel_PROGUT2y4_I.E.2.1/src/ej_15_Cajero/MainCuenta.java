@@ -21,7 +21,7 @@ public class MainCuenta {
 		System.out.println("4.-Sacar dinero.");
 		System.out.println("5.-Ver saldo.");
 		System.out.println("6.-Salir.");
-		switch (t.tryMaxInt(1, 6)) {
+		switch (t.tryMinMaxInt(1, 6)) {
 		case 1:
 			c=new Cuenta(0);
 			System.out.println("Cuenta vacía creada con éxito.");
