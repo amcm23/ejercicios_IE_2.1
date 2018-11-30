@@ -34,8 +34,8 @@ public class Portatil extends Ordenador{
 	}
 	
 	public String mostrarPortatil() {
-		return "RAM: "+ram+"\nCapacidad Disco Duro: "+disco_duro+"\nModelo del procesador: "+mod_procesador+
-				"\nPrecio: "+precio+"\nMarca: "+marca+"\nTamaño de la pantalla: "+tamaño_pantalla+"Peso: "+peso; 
+		return "RAM: "+ram+" gb\nCapacidad Disco Duro: "+disco_duro+" mb\nModelo del procesador: "+mod_procesador+
+				"\nPrecio: "+precio+" €\nMarca: "+marca+"\nTamaño de la pantalla: "+tamaño_pantalla+" pulgadas\nPeso: "+peso+" gr"; 
 	}
 	
 }

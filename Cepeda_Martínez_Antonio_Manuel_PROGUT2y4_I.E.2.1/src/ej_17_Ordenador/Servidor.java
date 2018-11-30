@@ -42,8 +42,8 @@ public class Servidor extends Ordenador {
 	}
 
 	public String mostrarServidor() {
-		return "RAM: " + ram + "\nCapacidad Disco Duro: " + disco_duro + "\nModelo del procesador: " + mod_procesador
-				+ "\nPrecio: " + precio + "\nTamaño del monitor " + tamaño_monitor + " pulgadas\nModelo del teclado: "
+		return "RAM: " + ram + " gb\nCapacidad Disco Duro: " + disco_duro + " mb\nModelo del procesador: " + mod_procesador
+				+ "\nPrecio: " + precio + "€\nTamaño del monitor " + tamaño_monitor + " pulgadas\nModelo del teclado: "
 				+ modelo_teclado + "\nModelo del ratón: " + modelo_raton;
 	}
 
