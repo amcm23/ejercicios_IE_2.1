@@ -1,5 +1,8 @@
 package ej_14_Marcianos;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Marte {
 
 	public static void main(String[] args) {

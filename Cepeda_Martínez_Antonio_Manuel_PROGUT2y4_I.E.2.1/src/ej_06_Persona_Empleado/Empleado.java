@@ -1,5 +1,8 @@
 package ej_06_Persona_Empleado;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Empleado extends Persona {
 
 	/**

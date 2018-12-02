@@ -1,5 +1,8 @@
 package ej_13_Alimentos;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Alimento {
 
 	/**

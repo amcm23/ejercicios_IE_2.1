@@ -1,5 +1,8 @@
 package ej_05_Empleado;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Empleado {
 
 	/**

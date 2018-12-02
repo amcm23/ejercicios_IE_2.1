@@ -1,5 +1,8 @@
 package ej_15_Cajero;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Cuenta {
 
 	/**

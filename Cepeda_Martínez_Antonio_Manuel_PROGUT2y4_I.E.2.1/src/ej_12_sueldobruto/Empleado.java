@@ -1,5 +1,8 @@
 package ej_12_sueldobruto;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Empleado {
 
 	/**

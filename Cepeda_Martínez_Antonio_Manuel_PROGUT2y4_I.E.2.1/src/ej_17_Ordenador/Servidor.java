@@ -1,5 +1,8 @@
 package ej_17_Ordenador;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Servidor extends Ordenador {
 
 	/**

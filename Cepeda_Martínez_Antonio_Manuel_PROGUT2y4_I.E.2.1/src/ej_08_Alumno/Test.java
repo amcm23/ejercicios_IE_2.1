@@ -2,6 +2,9 @@ package ej_08_Alumno;
 
 import ej_07_Asignatura.Asignatura;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Test {
 
 	public static void main(String[] args) {

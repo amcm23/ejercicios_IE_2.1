@@ -1,5 +1,8 @@
 package ej_07_Asignatura;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Asignatura {
 
 	/**

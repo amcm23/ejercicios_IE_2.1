@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 
 import metodosGenerales.Try;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Main_DocEst {
 
 	public static void main(String[] args) throws IOException {

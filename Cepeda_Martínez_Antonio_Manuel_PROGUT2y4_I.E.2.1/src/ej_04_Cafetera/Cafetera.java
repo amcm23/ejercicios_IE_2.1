@@ -1,5 +1,8 @@
 package ej_04_Cafetera;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Cafetera {
 
 	/**

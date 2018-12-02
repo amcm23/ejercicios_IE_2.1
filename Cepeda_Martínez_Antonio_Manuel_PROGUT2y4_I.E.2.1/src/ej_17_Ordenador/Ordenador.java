@@ -4,6 +4,9 @@ import java.io.IOException;
 
 import metodosGenerales.Try;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Ordenador {
 
 	Try t = new Try(); // instancia la clase trycatch

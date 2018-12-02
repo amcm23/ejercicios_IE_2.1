@@ -1,5 +1,8 @@
 package ej_08_Alumno;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Alumno {
 
 	/**

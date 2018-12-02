@@ -3,6 +3,9 @@ package ej_03_Cuenta_Bancaria;
 import java.io.IOException;
 import metodosGenerales.Try;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class MainCuenta {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {

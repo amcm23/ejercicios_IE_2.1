@@ -1,5 +1,8 @@
 package ej_10_PapasChocos;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class PapasChocos {
 
 	/**

@@ -1,5 +1,8 @@
 package ej_16_Personajes;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Guerrero extends Personajes {
 
 	/**

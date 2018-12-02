@@ -1,5 +1,8 @@
 package ej_03_Cuenta_Bancaria;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Cuenta {
 
 	/**

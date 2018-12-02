@@ -4,6 +4,9 @@ import java.io.IOException;
 
 import metodosGenerales.Try;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class MainPersonaEmpleado {
 
 	public static void main(String[] args) throws IOException {

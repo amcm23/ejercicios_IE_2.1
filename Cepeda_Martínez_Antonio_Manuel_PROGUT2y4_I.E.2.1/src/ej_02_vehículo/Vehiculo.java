@@ -1,5 +1,8 @@
 package ej_02_vehículo;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Vehiculo {
 
 	/**

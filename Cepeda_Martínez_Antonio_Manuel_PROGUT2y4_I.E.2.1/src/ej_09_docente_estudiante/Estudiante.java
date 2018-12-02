@@ -1,5 +1,8 @@
 package ej_09_docente_estudiante;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Estudiante extends Persona {
 
 	/**

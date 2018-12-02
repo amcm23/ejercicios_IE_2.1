@@ -1,5 +1,8 @@
 package ej_11_Triangulo;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class MainTriangulo {
 
 	public static void main(String[] args) {

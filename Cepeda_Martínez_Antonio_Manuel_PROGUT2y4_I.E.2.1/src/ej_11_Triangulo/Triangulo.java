@@ -2,6 +2,9 @@ package ej_11_Triangulo;
 
 import java.util.Arrays;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class Triangulo {
 
 	/**

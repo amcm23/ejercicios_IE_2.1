@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 
 import metodosGenerales.Try;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class TestOrdenador {
 
 	/**

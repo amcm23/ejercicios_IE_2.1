@@ -3,6 +3,9 @@ package ej_10_PapasChocos;
 import java.io.IOException;
 import metodosGenerales.Try;
 
+/**
+ * @author Antonio M Cepeda
+ */
 public class MainPapasChocos {
 
 	public static void main(String[] args) throws IOException {
