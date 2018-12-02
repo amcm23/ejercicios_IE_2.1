@@ -23,19 +23,19 @@ public class MainDVD {
 			System.out.println("Inserte la categoría de la película (ej: thriller,comedia,etc.)");
 			dvd1.setCategoria(leer.readLine());
 			System.out.println("Inserte la duración de la película (en minutos)");
-			Try m1 = new Try();
+			Try m1 = new Try(); //instancia la clase trycatch
 			dvd1.setDuracion(m1.tryInt());
 			System.out.println("¿Desea introducir un resumen de la película? (si/no)");
-			if (leer.readLine().equalsIgnoreCase("si")) {
+			if (leer.readLine().equalsIgnoreCase("si")) { //si escribe si, le pide la introducción del resumen
 				System.out.println("Introduzca el resumen: ");
 				dvd1.setResumen(leer.readLine());
 			}
 			System.out.println("");
 			System.out.println(dvd1.muestraDVDCine());
 			System.out.println("");
-			if (dvd1.esThriller() == true) {
+			if (dvd1.esThriller() == true) { //si trhiller es si
 				System.out.println("La película es un Thriller");
-			} else {
+			} else { //sino
 				System.out.println("La película no es un Thriller");
 			}
 			System.out.println("");
@@ -49,6 +49,6 @@ public class MainDVD {
 			System.out.println("");
 			System.out.println("¿Desea introducir otra película? (si/no)");
 			salir = leer.readLine();
-		} while (!salir.equalsIgnoreCase("no"));
+		} while (!salir.equalsIgnoreCase("no")); //opción de salir
 	}
 }

@@ -14,7 +14,7 @@ public class MainCafetera {
 		System.out.println("");
 		System.out.println("¿Cual es la capacidad máxima de su cafetera?");
 		int taza = 0;
-		Try m1 = new Try();
+		Try m1 = new Try(); // instancia la clase TryCatch
 		Cafetera c1 = new Cafetera();
 		c1.setCapacidadMaxima(m1.tryInt());
 		System.out.println("Inserte la capacidad de sus tazas: ");
@@ -29,7 +29,7 @@ public class MainCafetera {
 			System.out.println("3.Vaciar la cafetera");
 			System.out.println("4.Agregar café a la cafetera");
 			System.out.println("5.Salir del programa");
-			switch (m1.tryInt()) {
+			switch (m1.tryMinMaxInt(1, 5)) {
 			case 1:
 				c1.llenarCafetera();
 				break;
@@ -46,11 +46,8 @@ public class MainCafetera {
 			case 5:
 				salir = true;
 				break;
-
-			default:
-				break;
 			}
-		} while (salir != true);
+		} while (salir != true); //opción de salir
 		System.out.println("");
 		System.out.println("Hasta pronto");
 

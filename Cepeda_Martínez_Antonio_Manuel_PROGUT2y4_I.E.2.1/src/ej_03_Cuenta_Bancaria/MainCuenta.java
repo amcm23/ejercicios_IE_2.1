@@ -1,9 +1,6 @@
 package ej_03_Cuenta_Bancaria;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-
 import metodosGenerales.Try;
 
 public class MainCuenta {
@@ -11,11 +8,10 @@ public class MainCuenta {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
 		boolean salir = false;
-		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Bienvenido a nuestro sistema, a continuación, generaremos una cuenta para usted: ");
 		Cuenta c1 = new Cuenta();
-		Try m1 = new Try();
-		c1.ncuenta += 1;
+		Try m1 = new Try(); // instancia de la clase TryCatch
+		Cuenta.ncuenta += 1; // añade un número de cuenta propio a cada cuenta creada
 		System.out.println("Introduzca su DNI (sin letra): ");
 		c1.setDni(m1.tryLong());
 		System.out.println("");
@@ -31,7 +27,7 @@ public class MainCuenta {
 			System.out.println("2.Ingresar efectivo");
 			System.out.println("3.Retirar efectivo");
 			System.out.println("4.Salir del programa");
-			switch (Integer.parseInt(leer.readLine())) {
+			switch (m1.tryMinMaxInt(1, 4)) {
 			case 1:
 				c1.actualizarSaldo();
 				System.out.println("Su saldo ha sido actualizado.");
@@ -48,10 +44,8 @@ public class MainCuenta {
 			case 4:
 				salir = true;
 				break;
-			default:
-				break;
 			}
-		} while (salir != true);
+		} while (salir != true); //opción de salir
 	}
 
 }

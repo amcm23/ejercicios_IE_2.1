@@ -5,7 +5,7 @@ public class Marte {
 	public static void main(String[] args) {
 
 		Marciano et1 = new Marciano("Anselmo");
-		System.out.println("Hay " + et1.cuentaMarcianos() + " marcianos vivos.");
+		System.out.println("Hay " + et1.cuentaMarcianos() + " marciano vivo.");
 		Marciano et2 = new Marciano("Benancio");
 		System.out.println("Hay " + et2.cuentaMarcianos() + " marcianos vivos.");
 		Marciano et3 = new Marciano("Godofredo");

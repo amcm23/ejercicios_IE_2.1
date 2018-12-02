@@ -10,7 +10,7 @@ public class MainVehiculo {
 
 	public static void main(String[] args) throws IOException {
 
-		Try m1 = new Try();
+		Try m1 = new Try(); // instancia la clase TryCatch
 		String salir = null;
 		do {
 			BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
@@ -21,10 +21,10 @@ public class MainVehiculo {
 			v1.setPotencia(m1.tryDouble());
 			System.out.println("");
 			System.out.println("¿El vehículo tiene tracción a las 4 ruedas? (si/no)");
-			if (leer.readLine().equalsIgnoreCase("si")) {
-				v1.setcRuedas(true);
-			} else {
-				v1.setcRuedas(false);
+			if (leer.readLine().equalsIgnoreCase("si")) { // si introduce si
+				v1.setcRuedas(true); // cRuedas=true
+			} else { // sino
+				v1.setcRuedas(false); // false
 			}
 			System.out.println("");
 			System.out.println("Descripción del Coche: ");
@@ -32,7 +32,7 @@ public class MainVehiculo {
 			System.out.println("");
 			System.out.println("¿Desea introducir datos de otro coche? (si/no)");
 			salir = leer.readLine();
-		} while (!salir.equalsIgnoreCase("no"));
+		} while (!salir.equalsIgnoreCase("no")); // opción de salir
 	}
 
 }
