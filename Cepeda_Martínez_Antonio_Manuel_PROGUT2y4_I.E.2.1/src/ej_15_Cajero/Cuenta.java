@@ -34,7 +34,11 @@ public class Cuenta {
 	 * @param c
 	 */
 	public void extraer(float c) {
+		if(saldo-c<0) {
+		System.out.println("Saldo insuficiente.");	
+		}else {
 		saldo -= c;
+		}
 	}
 
 	/**

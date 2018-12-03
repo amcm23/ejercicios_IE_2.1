@@ -36,6 +36,7 @@ public class MainPapasChocos {
 				break;
 			}
 		} while (!salir); // opción de salir
+		System.out.println("Hasta pronto.");
 	}
 
 }

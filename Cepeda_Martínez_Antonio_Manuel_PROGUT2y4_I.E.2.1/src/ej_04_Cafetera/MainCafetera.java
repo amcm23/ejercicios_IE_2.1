@@ -19,9 +19,9 @@ public class MainCafetera {
 		int taza = 0;
 		Try m1 = new Try(); // instancia la clase TryCatch
 		Cafetera c1 = new Cafetera();
-		c1.setCapacidadMaxima(m1.tryInt());
+		c1.setCapacidadMaxima(m1.tryMinInt(0));
 		System.out.println("Inserte la capacidad de sus tazas: ");
-		taza = m1.tryInt();
+		taza = m1.tryMinInt(0);
 		do {
 			System.out.println(c1.muestraCafetera());
 			System.out.println("");
@@ -44,7 +44,7 @@ public class MainCafetera {
 				break;
 			case 4:
 				System.out.println("¿Cuántos c.c. de café desea agregar?");
-				c1.agregarCafe(m1.tryInt());
+				c1.agregarCafe(m1.tryMinInt(0));
 				break;
 			case 5:
 				salir = true;

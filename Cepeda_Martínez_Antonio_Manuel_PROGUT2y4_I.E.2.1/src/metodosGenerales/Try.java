@@ -444,4 +444,38 @@ public class Try {
 		return comprobar;
 	}
 
+	/**
+	 * Método que evita introducir un dni que no sea de 8 dígitos y 1 carácter
+	 * 
+	 * @param s
+	 * @return
+	 * @throws IOException
+	 */
+	public String TryDNI(String dni) throws IOException {
+		String DNI = dni;
+		boolean error = false;
+		char c;
+		do {
+			error = false;
+			while (DNI.length() != 9) { // comprueba que la longitud del string sea de 9
+				System.out.println("Longitud del DNI incorrecta, vuelva a introducirlo");
+				DNI = leer.readLine();
+			}
+			for (int i = 0; i < 8; i++) { // comprueba que los 8 primeros carácteres sean dígitos
+				c = DNI.charAt(i);
+				if (!Character.isDigit(c)) {
+					error = true;
+					break;
+				}
+			}
+			if (!Character.isAlphabetic(DNI.charAt(8))) // si el carácter 9 no es letra salta error
+				error = true;
+			if (error) {
+				System.out.println("DNI no válido, introduzcalo de nuevo");
+				DNI = leer.readLine();
+			}
+		} while (error);
+		return DNI;
+	}
+
 }

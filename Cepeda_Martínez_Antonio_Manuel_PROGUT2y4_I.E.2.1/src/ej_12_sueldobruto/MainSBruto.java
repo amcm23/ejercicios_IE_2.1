@@ -47,11 +47,11 @@ public class MainSBruto {
 		System.out.println("");
 		System.out.println("Los datos de los empleados son: ");
 		System.out.println(e1.getNombre() + " trabajó " + e1.getNhoras() + ", cobra " + e1.getTarifa()
-				+ " euros la hora por lo que le corresponde un sueldo de " + e1.sueldoBruto());
+				+ " euros la hora por lo que le corresponde un sueldo de " + e1.sueldoBruto()+"€");
 		System.out.println(e2.getNombre() + " trabajó " + e2.getNhoras() + ", cobra " + e2.getTarifa()
-				+ " euros la hora por lo que le corresponde un sueldo de " + e2.sueldoBruto());
+				+ " euros la hora por lo que le corresponde un sueldo de " + e2.sueldoBruto()+"€");
 		System.out.println(e3.getNombre() + " trabajó " + e3.getNhoras() + ", cobra " + e3.getTarifa()
-				+ " euros la hora por lo que le corresponde un sueldo de " + e3.sueldoBruto());
+				+ " euros la hora por lo que le corresponde un sueldo de " + e3.sueldoBruto()+"€");
 
 	}
 

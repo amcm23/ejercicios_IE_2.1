@@ -16,11 +16,11 @@ public class MainEmpleado {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.println("Bienvenido, ingrese el dni del empleado: ");
+		Try m1 = new Try(); //instancia la clase TryCatch
 		Empleado e1 = new Empleado();
-		e1.setNif(leer.readLine());
+		e1.setNif(m1.TryDNI(leer.readLine()));
 		System.out.println("");
 		System.out.println("Inserte el sueldo base: ");
-		Try m1 = new Try(); //instancia la clase TryCatch
 		e1.setSueldoBase(m1.tryMinInt(0));
 		System.out.println("");
 		System.out.println("Inserte las horas extras realizadas este mes: ");

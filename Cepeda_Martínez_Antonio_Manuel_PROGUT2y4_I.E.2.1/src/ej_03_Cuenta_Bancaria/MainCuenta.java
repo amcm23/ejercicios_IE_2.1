@@ -15,11 +15,11 @@ public class MainCuenta {
 		Cuenta c1 = new Cuenta();
 		Try m1 = new Try(); // instancia de la clase TryCatch
 		Cuenta.ncuenta += 1; // añade un número de cuenta propio a cada cuenta creada
-		System.out.println("Introduzca su DNI (sin letra): ");
-		c1.setDni(m1.tryLong());
+		System.out.println("Introduzca su DNI (sin letra, 8 dígitos): ");
+		c1.setDni(m1.tryMinMaxLong(10000000,99999999)); //evita meter menos o más de 8 dígitos
 		System.out.println("");
 		System.out.println("Introduzca el interés anual (en %): ");
-		Cuenta.setInteres(m1.tryFloat());
+		Cuenta.setInteres(m1.tryMinMaxFloat(0,100));
 		do {
 			System.out.println("El estado de su cuenta actualmente es: ");
 			System.out.println("");
@@ -49,6 +49,7 @@ public class MainCuenta {
 				break;
 			}
 		} while (salir != true); //opción de salir
+		System.out.println("Hasta pronto.");
 	}
 
 }

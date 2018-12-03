@@ -25,9 +25,9 @@ public class Main_DocEst {
 		System.out.println("Sexo: ");
 		doc.setSexo(leer.readLine());
 		System.out.println("DNI: ");
-		doc.setDNI(leer.readLine());
+		doc.setDNI(t.TryDNI(leer.readLine()));
 		System.out.println("Código: ");
-		doc.setCodigo(t.tryInt());
+		doc.setCodigo(t.tryMinInt(0));
 		System.out.println("Categoría: ");
 		doc.setCategoria(leer.readLine());
 		System.out.println("Estudios de Postgrado: ");
@@ -47,9 +47,9 @@ public class Main_DocEst {
 		System.out.println("Sexo: ");
 		est.setSexo(leer.readLine());
 		System.out.println("DNI: ");
-		est.setDNI(leer.readLine());
+		est.setDNI(t.TryDNI(leer.readLine()));
 		System.out.println("Código: ");
-		est.setCodigo(t.tryInt());
+		est.setCodigo(t.tryMinInt(0));
 		System.out.println("Categoría: ");
 		est.setCategoria(leer.readLine());
 		System.out.println("Pago de pensiones (€)");

@@ -21,7 +21,7 @@ public class MainVehiculo {
 			Vehiculo v1 = new Vehiculo(leer.readLine());
 			System.out.println("");
 			System.out.println("Introduzca la potencia del coche (en CV)");
-			v1.setPotencia(m1.tryDouble());
+			v1.setPotencia(m1.tryMinDouble(0));
 			System.out.println("");
 			System.out.println("¿El vehículo tiene tracción a las 4 ruedas? (si/no)");
 			if (leer.readLine().equalsIgnoreCase("si")) { // si introduce si
@@ -36,6 +36,7 @@ public class MainVehiculo {
 			System.out.println("¿Desea introducir datos de otro coche? (si/no)");
 			salir = leer.readLine();
 		} while (!salir.equalsIgnoreCase("no")); // opción de salir
+		System.out.println("Hasta pronto.");
 	}
 
 }
